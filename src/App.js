@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "./Containers/home/index";
+import About from "./Containers/about/index";
+import Resume from "./Containers/resume/index";
+import Skills from "./Containers/skills/index";
+import Portfolio from "./Containers/porfolio/index";
+import Contact from "./Containers/Contact/index";
+import Navbar from "./Components/Navbar/index";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+import "./App.css";
+import particles from "./utils.js/particles";
+const App = () => {
+  const location = useLocation();
 
-function App() {
+  const particlesLoaded = async (container) => {
+    console.log("Particles loaded:", container);
+  };
+  const handleInit = async (main) => {
+    await loadSlim(main);
+  };
+  const renderParticleJsInHomePage = location.pathname === "/";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {renderParticleJsInHomePage && (
+        <Particles
+          id="particles"
+          options={particles}
+          loaded={particlesLoaded}
+          init={handleInit}
+        />
+      )}
+      <Navbar />
+      <div className="app__main-page">
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
