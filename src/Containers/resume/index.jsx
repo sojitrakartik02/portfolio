@@ -11,7 +11,7 @@ import { MdWork } from 'react-icons/md';
 const Resume = () => {
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = '/resume.pdf';
+        link.href = '/Resume_kartik.pdf';
         link.download = 'Kartik_Sojitra_resume.pdf';
         document.body.appendChild(link);
         link.click();

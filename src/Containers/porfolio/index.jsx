@@ -5,39 +5,40 @@ import bookStore from '../../images/bookStrore.png'
 import chat_app from '../../images/chat-app.png'
 import Dice_game from '../../images/Dice_game.png'
 import gemini from '../../images/gemini.png'
-import Spotify_Clone from '../../images/Spotify-Clone.png'
+import Spotify_Clone from '../../images/Crypto.png'
 import './styles.scss'
 
 const portfolioData = [
+
     {
         id: 1,
-        name: 'Gemini-Clone',
-        image: gemini,
-        link: "https://gemini-clone-ruddy.vercel.app/",
-    },
-    {
-        id: 2,
         name: 'Book Store',
         image: bookStore,
         link: "https://book-store-puce-omega.vercel.app/",
     },
     {
-        id: 3,
+        id: 2,
         name: 'Dice Game',
         image: Dice_game,
         link: "https://dice-game-pdeg.vercel.app/",
     },
     {
-        id: 4,
-        name: 'Spotify-Clone',
+        id: 3,
+        name: 'Crypto Dashboard',
         image: Spotify_Clone,
-        link: "https://spotify-clone-yntl.vercel.app/",
+        link: "https://crypto-gamma-khaki.vercel.app/",
     },
     {
-        id: 5,
+        id: 4,
         name: 'Chat-app',
         image: chat_app,
         link: "https://github.com/sojitrakartik02/Chat-app",
+    },
+    {
+        id: 5,
+        name: 'Gemini-Clone',
+        image: gemini,
+        link: "https://gemini-clone-ruddy.vercel.app/",
     },
 ]
 
