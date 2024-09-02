@@ -36,7 +36,7 @@ const personalDetails = [
     }
 ];
 
-const jobSummry = "As a Fullstack Developer, I thrive on crafting robust and scalable web applications that seamlessly integrate front - end and back - end functionalities.With a solid foundation in both client - side and server - side technologies, I specialize in creating responsive user interfaces using modern frameworks like React and Angular, coupled with backend services built on Node.js .Proficient in database management systems such  MongoDB, I ensure data integrity and efficiency.My expertise extends to RESTful API development."
+const jobSummry = "As a Full Stack Developer since December 2023, I've been driving the development of dynamic web applications, leveraging technologies like React, Node.js, Express, and MongoDB.My work spans frontend to backend, where I've implemented seamless integrations with APIs and third - party services, always with a focus on performance and user experience.I thrive in collaborative environments, contributing to projects that deliver robust and scalable solutions.My commitment to excellence is reflected in my active participation in Agile methodologies and my consistent use of Git for efficient code management."
 
 const About = () => {
     return (
@@ -58,7 +58,7 @@ const About = () => {
                             transform: 'translateX(0px)',
                         }}
                     >
-                        <h3>Frontend Developer</h3>
+                        <h3>Full Stack Developer</h3>
                         <p>{jobSummry}</p>
                     </Animate>
                     <Animate

@@ -6,21 +6,6 @@ export const data = {
       description:
         "Led development initiatives for dynamic web applications utilizing React.js for frontend interfaces and Node.js and Express for backend services. Implemented RESTful APIs, integrated MongoDB for database management, and utilized Socket.IO for real-time communication features. Collaborated closely with UI/UX designers to ensure seamless user experiences and optimized performance across platforms.",
     },
-    // {
-    //   title: "Consultant",
-    //   subTitle: "Miami, FL",
-    //   description: "User Experience,",
-    // },
-    // {
-    //   title: "Consultant",
-    //   subTitle: "Miami, FL",
-    //   description: "User Experience,",
-    // },
-    // {
-    //   title: "Consultant",
-    //   subTitle: "Miami, FL",
-    //   description: "User Experience,",
-    // },
   ],
   education: [
     {
