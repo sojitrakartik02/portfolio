@@ -11,6 +11,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import "./App.css";
 import particles from "./utils.js/particles";
+import ProjectPage from "./Containers/ProjectPage/ProjectPage";
 const App = () => {
   const location = useLocation();
 
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/project/:projectId" element={<ProjectPage />} />{" "}
         </Routes>
       </div>
     </div>

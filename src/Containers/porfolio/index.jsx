@@ -7,6 +7,9 @@ import Dice_game from '../../images/Dice_game.png'
 import gemini from '../../images/gemini.png'
 import Spotify_Clone from '../../images/Crypto.png'
 import './styles.scss'
+import Invoices from '../../images/Invoices.png'
+import { useNavigate } from 'react-router-dom'
+
 
 const portfolioData = [
 
@@ -40,6 +43,12 @@ const portfolioData = [
         image: gemini,
         link: "https://gemini-clone-ruddy.vercel.app/",
     },
+    {
+        id: 6,
+        name: 'Invoice App',
+        image: Invoices,
+        link: "https://invoices-topaz.vercel.app/",
+    },
 ]
 
 const filetrData = [
@@ -69,7 +78,7 @@ const Porfolio = () => {
     console.log("**************")
     console.log(filterValue)
 
-
+    const navigate = useNavigate();
     const filteredItems = filterValue === 1 ? portfolioData :
         portfolioData.filter(item => item.id === filterValue)
 
@@ -82,7 +91,9 @@ const Porfolio = () => {
     function handleViste(link) {
         window.open(link, '_blank')
     }
-
+    function handleView(projectId) {
+        navigate(`/project/${projectId}`);
+    }
     return (
         <section className='portfolio' id="Portfolio">
             <PageHeaderContent
@@ -116,6 +127,8 @@ const Porfolio = () => {
                                         index === hoverValue && (
                                             <div>
                                                 <p>{item.name}</p>
+                                                <button onClick={() => handleView(item.id)}>View</button>
+
                                                 <button onClick={() => handleViste(item.link)}>Visite</button>
                                             </div>
                                         )
