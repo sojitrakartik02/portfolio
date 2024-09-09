@@ -1,0 +1,11 @@
+.App {
+  height: 100%;
+}
+
+.app__main {
+  height: calc(100% - 80px);
+}
+
+.app__main-page {
+  padding-top: 0px;
+}

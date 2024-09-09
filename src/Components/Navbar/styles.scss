@@ -1,0 +1,99 @@
+.navbar {
+    background-color: var(--yellow-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.navbar__container__logo {
+    color: var(--yellow-theme-main-color);
+    cursor: pointer;
+}
+
+.navbar__container__menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active {
+            background: #181818;
+            left: 0;
+            opacity: 1;
+        }
+
+        .navbar__container__menu_item {
+            border-bottom: 1px solid #282828;
+            margin: 0;
+            padding: 20px 0;
+        }
+    }
+}
+
+.navbar__container__menu_item {
+    line-height: 40px;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: all 0.5s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+        background: var(--yellow-theme-main-color);
+    }
+}
+
+.navbar__container__menu_item__links {
+    color: var(--yellow-theme-main-color);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.nav-icon {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+        cursor: pointer;
+        padding-right: 20px;
+        color: var(--yellow-theme-main-color);
+    }
+}
+
+.app__main-page {
+    padding-top: 80px;
+    /* To avoid content going under the navbar */
+}
