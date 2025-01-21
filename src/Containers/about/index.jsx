@@ -60,7 +60,7 @@ const About = () => {
                     >
                         <h3>Backend Developer</h3>
                         <p>{jobSummry}</p>
-                    </Animate>
+                    </Animate >
                     <Animate
                         play
                         duration={1.5}
@@ -93,7 +93,7 @@ const About = () => {
                             ))}
                         </ul>
                     </Animate>
-                </div>
+                </div >
                 <div className='about__content__serviceswrapper'>
                     <Animate
                         play
@@ -123,8 +123,8 @@ const About = () => {
                         </div>
                     </Animate>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 };
 
