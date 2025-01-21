@@ -1,10 +1,14 @@
 export const data = {
   experience: [
     {
-      title: "Fullstack, Web Developer",
-      subTitle: "Pulpit Mobility",
-      description:
-        "Currently pursuing internship in Web-Developer at Pulpit Mobility  Identified and resolved bugs on the original website of pulpitmobility.com , improving site stability and user experience. Developed a new website pulpitinfotech.com , using HTML, CSS, and JavaScript, showcasing the company’s tech services. Built vishvgroup.com , a staffing platform designed to streamline the hiring process, using modern web development techniques.",
+      title: "Backend Developer",
+      subTitle: "-Ninja Tech",
+      description: ` Transitioned from a Full-Stack Developer role after a 6-month internship, applying in-depth knowledge of backend technologies to build and maintain scalable server-side solutions.
+   Designed, developed, and optimized RESTful APIs, ensuring fast and reliable communication between the frontend and backend.
+   Integrated and optimized databases (SQL/NoSQL) for high performance, including data modeling, query optimization, and ensuring data consistency.
+   Led the development of key server-side features such as authentication systems, payment gateways, and real-time notifications using technologies like Socket.IO.
+   Worked with the team to enhance application performance, reducing server response times by 25% through code optimization and caching strategies.
+   Collaborated closely with product managers, frontend developers, and DevOps teams to deliver seamless user experiences and ensure application scalability.`,
     },
   ],
   education: [
@@ -16,7 +20,7 @@ export const data = {
     {
       title: "12th",
       subTitle: "",
-      description: "Shree Ram Vidhyalaya,Palanpur",
+      description: "Taravada Gurukul, 2018 - 2021",
     },
   ],
 };

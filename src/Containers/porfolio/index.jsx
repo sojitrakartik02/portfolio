@@ -15,29 +15,40 @@ const portfolioData = [
 
     {
         id: 1,
-        name: 'Sneaker E-commerce Store',
-        // image: bookStore,
-        // link: "https://book-store-puce-omega.vercel.app/",
+        name: 'Book Store',
+        image: bookStore,
+        link: "https://book-store-puce-omega.vercel.app/",
     },
     {
         id: 2,
-        name: 'Screen Time Analysis',
-        // image: Dice_game,
-        // link: "https://dice-game-pdeg.vercel.app/",
+        name: 'Dice Game',
+        image: Dice_game,
+        link: "https://dice-game-pdeg.vercel.app/",
     },
     {
         id: 3,
-        name: ' Hospital Management System ',
-        // image: Spotify_Clone,
-        // link: "https://crypto-gamma-khaki.vercel.app/",
+        name: 'Crypto Dashboard',
+        image: Spotify_Clone,
+        link: "https://crypto-gamma-khaki.vercel.app/",
     },
     {
         id: 4,
-        name: ' Pulpit Infotech Website',
-        // image: chat_app,
-        // link: "https://github.com/sojitrakartik02/Chat-app",
+        name: 'Chat-app',
+        image: chat_app,
+        link: "https://github.com/sojitrakartik02/Chat-app",
     },
-
+    {
+        id: 5,
+        name: 'Gemini-Clone',
+        image: gemini,
+        link: "https://gemini-clone-ruddy.vercel.app/",
+    },
+    {
+        id: 6,
+        name: 'Invoice App',
+        image: Invoices,
+        link: "https://invoices-topaz.vercel.app/",
+    },
 ]
 
 const filetrData = [
@@ -107,18 +118,18 @@ const Porfolio = () => {
                                 onMouseLeave={() => handleHover(null)}
                                 key={`cardItem${item.name.trim()}`} className='portfolio__content__cards__item'>
                                 <div className='portfolio__content__cards__item__img-wrapper'>
-                                    {/* <a>
+                                    <a>
                                         <img src={item.image} />
-                                    </a> */}
+                                    </a>
                                 </div>
                                 <div className='overlay'>
                                     {
                                         index === hoverValue && (
                                             <div>
-                                                <p style={{ fontSize: "30px" }}>{item.name}</p>
+                                                <p>{item.name}</p>
                                                 <button onClick={() => handleView(item.id)}>View</button>
 
-                                                {/* <button onClick={() => handleViste(item.link)}>Visite</button> */}
+                                                <button onClick={() => handleViste(item.link)}>Visite</button>
                                             </div>
                                         )
                                     }

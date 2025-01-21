@@ -11,8 +11,8 @@ import { MdWork } from 'react-icons/md';
 const Resume = () => {
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = '/MAN_PRAJAPATI_Resume.pdf';
-        link.download = 'Man_resume.pdf';
+        link.href = '/Resume_kartik.pdf';
+        link.download = 'Kartik_Sojitra_resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link)
@@ -47,13 +47,20 @@ const Resume = () => {
                                 className='timeline__experience__vertical-timeline-element'
                             >
                                 <div className='vertical-timeline-element-title-wrapper'>
-                                    <h3 >{item.title}</h3>
-                                    <h4 >{item.subTitle}</h4>
+                                    <h3>{item.title}</h3>
+                                    <h4>{item.subTitle}</h4>
                                 </div>
-                                <p className='vertical-timeline-element-title-wrapper-des' >{item.description}</p>
+                                <ul className='vertical-timeline-element-title-wrapper-des'>
+                                    {item.description.split('\n').map((line, idx) => (
+                                        <li key={idx} style={{ listStyleType: 'disc', marginLeft: '20px', marginBottom: '20px' }}>
+                                            {line.trim()}
+                                        </li>
+                                    ))}
+                                </ul>
                             </VerticalTimelineElement>
                         ))}
                     </VerticalTimeline>
+
                 </div>
                 <div className='timeline__education'>
                     <h3 className='timeline__education__header-text'>Education</h3>

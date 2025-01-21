@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <section id='home' className='home'>
             <div className='home__text-wrapper'>
-                <h1 className='home__text-wrapper__hello'>Hello, I'm Man <br />Full Stack Developer</h1>
+                <h1 className='home__text-wrapper__hello'>Hello, I'm Kartik <br />Backend Developer</h1>
             </div>
             <Animate
                 play

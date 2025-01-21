@@ -9,30 +9,34 @@ import './styles.scss';
 const personalDetails = [
     {
         label: "Name",
-        value: "Man Prajapati",
+        value: "Kartik",
     },
 
     {
         label: "Address",
-        value: "Gandhinagar",
+        value: "Ahmedabad",
     },
     {
         label: "Email",
-        value: "manprajapati189@GMAIL.COM",
+        value: "kartiksojitra02@gmail.com",
     },
     {
         label: "Contact No",
-        value: "+91 7096263536",
+        value: "+91 7043468230",
     },
-
+    {
+        label: "Github",
+        value: "sojitrakartik02",
+        link: "https://github.com/sojitrakartik02"
+    },
     {
         label: "LinkedIn",
-        value: "man",
-        link: "https://www.linkedin.com/in/man-prajapati-05bb29295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        value: "kartik02",
+        link: "https://www.linkedin.com/in/sojitra-kartik-0898b5232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
 ];
 
-const jobSummry = "As a Full Stack Developer since December 2023, I've been driving the development of dynamic web applications, leveraging technologies like React, Node.js, Express, and MongoDB.My work spans frontend to backend, where I've implemented seamless integrations with APIs and third - party services, always with a focus on performance and user experience.I thrive in collaborative environments, contributing to projects that deliver robust and scalable solutions.My commitment to excellence is reflected in my active participation in Agile methodologies and my consistent use of Git for efficient code management."
+const jobSummry = "As a Backend Developer since December 2023, I've been focused on creating robust and scalable server-side solutions, utilizing technologies such as Node.js, Express, and MongoDB. My work primarily involves developing RESTful APIs, integrating third-party services, and ensuring seamless data flow between the frontend and backend. I have a deep understanding of database design, performance optimization, and security practices, with a focus on building high-performing, reliable systems.I collaborate closely with frontend developers to create seamless integrations and ensure the smooth operation of the entire application ecosystem."
 
 const About = () => {
     return (
@@ -54,7 +58,7 @@ const About = () => {
                             transform: 'translateX(0px)',
                         }}
                     >
-                        <h3>Full Stack Developer</h3>
+                        <h3>Backend Developer</h3>
                         <p>{jobSummry}</p>
                     </Animate>
                     <Animate
