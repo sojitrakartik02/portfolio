@@ -35,7 +35,7 @@ const portfolioData = [
         id: 4,
         name: 'Chat-app',
         image: chat_app,
-        link: "https://github.com/sojitrakartik02/Chat-app",
+        link: "https://chat-app-frontend-bprh.onrender.com/",
     },
     {
         id: 5,
