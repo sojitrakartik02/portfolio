@@ -3,12 +3,18 @@ export const data = {
     {
       title: "Backend Developer",
       subTitle: "-Ninja Tech",
-      description: ` Transitioned from a Full-Stack Developer role after a 6-month internship, applying in-depth knowledge of backend technologies to build and maintain scalable server-side solutions.
-   Designed, developed, and optimized RESTful APIs, ensuring fast and reliable communication between the frontend and backend.
-   Integrated and optimized databases (SQL/NoSQL) for high performance, including data modeling, query optimization, and ensuring data consistency.
-   Led the development of key server-side features such as authentication systems, payment gateways, and real-time notifications using technologies like Socket.IO.
-   Worked with the team to enhance application performance, reducing server response times by 25% through code optimization and caching strategies.
-   Collaborated closely with product managers, frontend developers, and DevOps teams to deliver seamless user experiences and ensure application scalability.`,
+      description: ` Transitioned into a Backend Developer role, leveraging expertise in server-side technologies to design and maintain scalable, high performance solutions for a large-scale e-commerce platform.
+ Architected and implemented RESTful APIs, ensuring efficient communication between frontend and backend systems for seamless user experiences.
+ Integrated and optimized databases (MongoDB, SQL) to handle large datasets with a focus on data modeling, query performance, and data consistency, improving overall system reliability.
+ Spearheaded the development of advanced backend features,including authentication systems, payment gateway integrations (Razorpay, Stripe), real-time notifications powered by Socket.IO and dynamic pricing features for e-commerce platforms.
+ Utilized BullMQ for efficient job queue management, ensuring smooth background processing of tasks such as order processing,payments, and inventory updates.
+ Implemented Node-cron for scheduled tasks, ensuring timely updates and background operations for order management and notifications.
+ Integrated Swagger for seamless API documentation and testing,streamlining collaboration between frontend and backend teams.
+ Leveraged Docker to containerize backend services, ensuring scalable deployment in cloud environments and smooth integration with CI/CD pipelines.
+ Enhanced system performance by reducing server response times by 30%, using Redis caching and code optimization techniques.
+ Developed and managed dynamic pricing features, including discount systems (seasonal, volume-based, loyalty programs), enhancing customer engagement and increasing sales.
+ Delivered real-time updates for order statuses and user notifications,increasing user engagement and satisfaction.
+ Collaborated cross-functionally with product managers, frontend teams, and DevOps engineers to ensure scalable system architecture and smooth deployment.`,
     },
   ],
   education: [
